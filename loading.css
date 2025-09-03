@@ -1,0 +1,27 @@
+body{ background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.loading {
+    display: flex;
+    gap: 10px;
+}
+.dot { witdth: 20px;
+    height: 20px;
+    background-color: #3498db;
+    animation: subirDescer 1.2s ease-in-out infinite;
+} 
+.dot:nth-last-child(2) {
+    animation-delay: 0.2s;
+}
+.dot:nth-last-child(3) {
+    animation-delay: 0.4s;
+}
+@keyframes subirDecer{
+0% {trasfor: translatey(0);}
+50% {transform: translatey(-15px;)}
+100% { transform: translatey(0);}
+}
